@@ -1,4 +1,4 @@
-name: "Espressif IoT Development Framework (ESP-IDF) on push"
+name: "Espressif IoT Development Framework (ESP-IDF) on pushh"
 on:
   push:
     branches: master
