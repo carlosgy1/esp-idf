@@ -6,7 +6,7 @@ on:
     inputs:
       path:
         description: "Relative path under $GITHUB_WORKSPACE to place the repository"
-        default: "examples/get-started/hello_world"
+        default: "examples/get-started/blink"
         required: false
       esp_idf_version:
         description: "Version of ESP-IDF docker image to use"
@@ -41,6 +41,6 @@ jobs:
     - name: Download built firmware
       uses: actions/upload-artifact@v4
       with:
-        name: hello_world.bin
+        name: blink.bin
         path: |
-          examples/get-started/hello_world/build/hello_world.bin
+          examples/get-started/blink/build/blink.bin
